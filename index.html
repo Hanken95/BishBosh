@@ -6,7 +6,33 @@
     <title>BishBosh</title>
 </head>
 <body>
-    <input id="bishBoshButton" type="button" value="Standard bish bosh" />
+    <header><h1>Bish Bosh</h1></header>
+
+    <h3>Bish-Bosh listar alla tal mellan 1 och 100, men vissa undantag: Om talet är jämnt delbart
+        med ett valt "Bishtal" listas ‘Bish’ istället för talet. Om talet är jämnt delbart med ett valt "Boshtal" listas ‘Bosh’ istället för
+        talet. Om talet är jämnt delbart med båda talen skrivs “Bish-Bosh” istället för talet.<br>
+        Jag har skapat sidan med syfte att lära mig
+        </h3>
+    <input id="standardBishBoshButton" type="button" value="Standard bish bosh" />
+    <br/>
+    <br/>
+    Bish number(bigger than 0): <input type="number" min="1" id="bishNumber"/><br/><br/>
+    Bosh number(bigger than Bish number): <input type="number" min="2" id="boshNumber"/><br/><br/>
+    Loop max(bigger than Bish number): <input type="number" min="3" id="loopMax"/>
+    <br/><br/>
+    
+    <input id="advancedBishBoshButton" type="button" value="Submit advanced bish bosh" />
+    <h3 id="errorMessage"></h3>
+    <br/><br/>
+    <h2>Results</h2>
+    <ul id="bishBoshList">
+        <li>Nothing here</li>
+    </ul>
+    <br>
+    <footer>
+        <h3>Luna</h3> 
+        <h3>Copyright Luna</h3>
+    </footer>
 
     <script src="./scripts/BishBosh.js"></script>
 </body>
